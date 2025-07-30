@@ -16,53 +16,53 @@ const moocscards = [
   },
   {
     title: "Machine Learning",
-    cardImage: "assets/images/education-page/1M.AVIF",
+    cardImage: "assets/images/education-page/1M.avif",
     moocLink: "https://www.codewithharry.com/courses/the-ultimate-job-ready-data-science-course",
   },
   {
     title: "Introduction to HTML 5",
-    cardImage: "assets/images/education-page/WEB.JPEG",
+    cardImage: "assets/images/education-page/WEB.jpeg",
     moocLink: "https://www.udacity.com/course/intro-to-html-and-css--ud001",
   },
   {
     title: "Introduction to CSS 3",
-    cardImage: "assets/images/education-page/WEB.JPEG",
+    cardImage: "assets/images/education-page/WEB.jpeg",
     moocLink: "https://www.udacity.com/course/intro-to-html-and-css--ud001",
   },
   {
     title: "Javascript",
-    cardImage: "assets/images/education-page/WEB.JPEG",
+    cardImage: "assets/images/education-page/WEB.jpeg",
     moocLink:"https://www.youtube.com/@ApnaCollegeOfficial",
   },
   {
     title: "Bootstrap 4 - Apna College",
-    cardImage: "assets/images/education-page/BOOT.JPEG",
+    cardImage: "assets/images/education-page/BOOT.jpeg",
     moocLink: "https://www.youtube.com/@ApnaCollegeOfficial",
   },
   {
     title: "Intro to React",
-    cardImage: "assets/images/education-page/hq720.JPG",
+    cardImage: "assets/images/education-page/hq720.jpg",
     moocLink: "https://www.youtube.com/watch?v=RGKi6LSPDLU&t=4008s",
   },
   {
     title: "NodeJS, Express and MongoDB- Hitesh Choudhary",
-    cardImage: "assets/images/education-page/mon.JPEG",
+    cardImage: "assets/images/education-page/mon.jpeg",
     moocLink: "",
   },
   {
     title: "Replit Ai",
-    cardImage: "assets/images/education-page/REP12.JPEG",
+    cardImage: "assets/images/education-page/REP12.jpeg",
     moocLink: "https://www.youtube.com/watch?v=63baP9l21F0&t=349s",
   },
   {
     title: "Data Structures & Algorithms Apna College",
-    cardImage: "assets/images/education-page/dsa.JPEG",
+    cardImage: "assets/images/education-page/dsa.jpeg",
     moocLink:
       "https://www.udacity.com/course/data-structures-and-algorithms-nanodegree--nd256",
   },
   {
     title: "Data Structures & Algorithms Apna College",
-    cardImage: "assets/images/education-page/dsa.JPEG",
+    cardImage: "assets/images/education-page/dsa.jpeg",
     moocLink:
       "https://www.udacity.com/course/data-structures-and-algorithms-nanodegree--nd256",
   },
