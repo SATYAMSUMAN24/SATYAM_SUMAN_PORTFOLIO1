@@ -7,14 +7,14 @@ const referenceTable = document.querySelector(".pain");
 const references = [
   {
     sl1: 1,
-    name1 : "Smaranjit Ghose",
+    name1 : "Harshit Choudhary",
         designation1 : "Product Manager, Microsoft",
         image1 : "https://avatars.githubusercontent.com/u/46641503?v=4",
         message1 : "Satyam is a conscientious individual whom I mentored during JWOC'2021. His problem-solving skills and a keen interest in learning new skillsets are remarkable. His hardworking nature and team-building abilities make him different from others.",
         
 
         sl2:2,
-        name2 : "Anush Bhatia",
+        name2 : "Sudipta Panda",
         designation2 : "Senior Analyst, Capgemini", 
         image2: "https://avatars.githubusercontent.com/u/40017559?v=4",
         message2 : "Satyam has the best grasping skills I have seen in a new developer. I got to know him through GSSOC'2021 when I mentored him, and he made an exceptional growth during the competition. He made some incredible contributions and has good experience with Open Source.",
@@ -24,17 +24,17 @@ const references = [
 
     {
         sl1:3,
-        name1 : "Aditya Jyoti Paul",
+        name1 : "Aditya Kumar",
         designation1 : "Technical Analyst, Amazon",
         image1 : "https://media-exp1.licdn.com/dms/image/C5603AQGEV-kzawPxjw/profile-displayphoto-shrink_800_800/0/1588602102622?e=1651708800&v=beta&t=8nxhFoR-WB4OKVltyYaVjmRpig_kQcvFsoa-eLjJPBQ",
         message1 : "Satyam and I have worked on several projects. Apart from technical skills, he also has good soft skills. He has good experience with debugging and has excellent leadership qualities.",
         
 
         sl2:4,
-        name2 : "Arnab Dutta Purkayastha",
+        name2 : "Arnab Suman",
         designation2 : "Data Scientist, Flipkart",
         image2 : "https://avatars.githubusercontent.com/u/59832779?v=4",
-        message2 : "John and I worked together during a hackathon and the thing that surprised me the most about him was his knowledge of fundamentals. He offered sincere help to the team throughout the competition. He is an impressive problem solver who is able to address complex issues strategically and confidently.",
+        message2 : "Satyam and I worked together during a hackathon and the thing that surprised me the most about him was his knowledge of fundamentals. He offered sincere help to the team throughout the competition. He is an impressive problem solver who is able to address complex issues strategically and confidently.",
   },
 ];
 
