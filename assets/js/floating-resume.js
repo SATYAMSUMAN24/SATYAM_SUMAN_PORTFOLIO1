@@ -4,7 +4,7 @@ class FloatingResumeWidget {
         this.widget = null;
         this.isExpanded = false;
         this.resumeUrl = 'assets/docs/Satyam_Suman_Resume.pdf';
-        this.resumeUrl = 'assets/docs/Satyam_Suman_Data_Analyst_Resume.pdf';
+        this.resumeUrl2 = 'assets/docs/Satyam_Suman_Data_Analyst_Resume.pdf';
         this.downloadCount = localStorage.getItem('resumeDownloadCount') || 0;
         this.init();
     }
