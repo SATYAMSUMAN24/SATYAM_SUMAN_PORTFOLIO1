@@ -25,8 +25,8 @@ const references = [
     {
         sl1:3,
         name1 : "Sudipta Panda",
-        designation1 : "/assets/images/references-page/reviewphoto1.png",
-        image1 : "https://media-exp1.licdn.com/dms/image/C5603AQGEV-kzawPxjw/profile-displayphoto-shrink_800_800/0/1588602102622?e=1651708800&v=beta&t=8nxhFoR-WB4OKVltyYaVjmRpig_kQcvFsoa-eLjJPBQ",
+        designation1 : "Senior Developer, TCS",
+        image1 : "/assets/images/references-page/reviewphoto1.png",
         message1 : "Satyam and I have worked on several projects. Apart from technical skills, he also has good soft skills. He has good experience with debugging and has excellent leadership qualities.",
         
 
