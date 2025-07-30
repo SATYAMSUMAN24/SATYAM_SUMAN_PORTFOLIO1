@@ -1,0 +1,704 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400;500;600;700;800&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Inter:wght@200;300;400;500;600;700;800&display=swap");
+
+:root {
+  --primary-color: #bb86fc;
+  --secondary-color: #4c00bb;
+  --dark-bg: #141414;
+  --card-bg: #1e1e1e;
+  --text-primary: #ffffff;
+  --text-secondary: #b3b3b3;
+  --gradient-primary: linear-gradient(135deg, #bb86fc 0%, #4c00bb 100%);
+  --shadow-light: rgba(187, 134, 252, 0.1);
+  --shadow-dark: rgba(0, 0, 0, 0.3);
+}
+
+html[light-mode="light"] {
+  --bg1-color: #ffffff;
+  --text-color: #333333;
+  --shadow-col1: #e0e0e0;
+  --shadow-col2: #ffffff;
+  --meta-col: #666666;
+  --head-col: #1a1a1a;
+  --card-bg: #ffffff;
+  --dark-bg: #f8f9fa;
+  --text-primary: #333333;
+  --text-secondary: #666666;
+}
+
+html[light-mode="dark"] {
+  --bg1-color: var(--card-bg);
+  --text-color: var(--text-primary);
+  --bg-txt-img: var(--gradient-primary);
+  --txt-fill: transparent;
+  --shadow-col1: #0d0d0d;
+  --shadow-col2: #2a2a2a;
+  --meta-col: var(--text-secondary);
+  --head-col: var(--text-primary);
+}
+
+html {
+  overflow-x: hidden;
+}
+
+body {
+  background-color: var(--dark-bg);
+  color: var(--text-primary);
+  transition: all 0.3s ease;
+}
+
+/* Main section improvements */
+@media (max-width: 766px) {
+  .dropdown {
+    position: absolute;
+    padding-right: 3.5rem;
+  }
+  .godown {
+    z-index: 1;
+    padding-top: 8rem;
+    padding-left: 3.3rem;
+  }
+}
+
+.head-upper {
+  background: var(--bg-txt-img);
+  background-clip: text;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: var(--txt-fill);
+}
+
+section > div {
+  padding-top: 7rem !important;
+}
+
+.experience_head {
+  font-weight: bold;
+  color: var(--head-col);
+}
+
+.my_experience {
+  color: #4e00bb;
+}
+
+.main,
+.main1 {
+  width: 100%;
+  padding-left: 2rem;
+  padding-right: 2rem;
+  margin: 0 auto;
+}
+
+/* Enhanced Experience Cards */
+.experience-cards {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(400px, 1fr));
+  gap: 2rem;
+  padding: 2rem 0;
+  max-width: 1400px;
+  margin: 0 auto;
+}
+
+@media only screen and (max-width: 768px) {
+  .experience-cards {
+    grid-template-columns: 1fr;
+    padding: 1rem;
+    gap: 1.5rem;
+  }
+}
+
+.card1 {
+  background: var(--bg1-color);
+  display: flex;
+  flex-direction: column;
+  border: none;
+  border-radius: 20px;
+  overflow: hidden;
+  margin: 1rem auto;
+  box-shadow: 0 15px 35px var(--shadow-light), 0 5px 15px var(--shadow-dark);
+  transition: all 0.4s cubic-bezier(0.25, 0.8, 0.25, 1);
+  position: relative;
+  z-index: 1;
+  max-width: 500px;
+}
+
+.card1:hover {
+  transform: scale(1.05) translateY(-10px);
+  box-shadow: 0 25px 50px var(--shadow-light), 0 10px 25px var(--shadow-dark);
+  z-index: 2;
+}
+
+.card-header {
+  position: relative;
+  overflow: hidden;
+  height: 250px;
+}
+
+.featured-image {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  transition: transform 0.4s ease;
+}
+
+.card1:hover .featured-image {
+  transform: scale(1.1);
+}
+
+.card-overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background: linear-gradient(135deg, rgba(187, 134, 252, 0.8), rgba(76, 0, 187, 0.8));
+  opacity: 0;
+  transition: opacity 0.3s ease;
+  display: flex;
+  align-items: flex-end;
+  padding: 1rem;
+}
+
+.card1:hover .card-overlay {
+  opacity: 1;
+}
+
+.skills-container {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.5rem;
+}
+
+.skill-tag {
+  background: rgba(255, 255, 255, 0.9);
+  color: var(--secondary-color);
+  padding: 0.25rem 0.75rem;
+  border-radius: 20px;
+  font-size: 0.75rem;
+  font-weight: 600;
+}
+
+.card-body {
+  padding: 1.5rem;
+  color: var(--head-col);
+}
+
+.card-title {
+  font-size: 1.5rem;
+  font-weight: 700;
+  color: var(--head-col);
+  margin-bottom: 0.5rem;
+}
+
+.meta-info {
+  display: flex;
+  flex-direction: column;
+  gap: 0.25rem;
+  margin-bottom: 1rem;
+}
+
+.company {
+  color: var(--primary-color);
+  font-weight: 600;
+  font-size: 1.1rem;
+}
+
+.duration {
+  color: var(--meta-col);
+  font-size: 0.9rem;
+}
+
+.card-text {
+  color: var(--text-color);
+  line-height: 1.6;
+  margin-bottom: 1rem;
+}
+
+.achievement-list {
+  list-style: none;
+  padding: 0;
+}
+
+.achievement-list li {
+  position: relative;
+  padding-left: 1.5rem;
+  margin-bottom: 0.5rem;
+  color: var(--text-color);
+  line-height: 1.5;
+}
+
+.achievement-list li::before {
+  content: "▶";
+  position: absolute;
+  left: 0;
+  color: var(--primary-color);
+  font-size: 0.8rem;
+}
+
+/* Improved Volunteership Cards */
+.volunteerCard {
+  background: var(--bg1-color);
+  border: 1px solid var(--shadow-col1);
+  border-radius: 15px;
+  padding: 2rem;
+  margin: 1rem;
+  text-decoration: none;
+  transition: all 0.3s ease;
+  position: relative;
+  overflow: hidden;
+  box-shadow: 0 10px 30px var(--shadow-light);
+}
+
+.volunteerCard::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  height: 4px;
+  background: var(--gradient-primary);
+}
+
+.volunteerCard:hover {
+  transform: translateY(-10px) scale(1.02);
+  box-shadow: 0 20px 40px var(--shadow-light);
+}
+
+.volunteerTitle {
+  color: var(--head-col);
+  font-size: 1.5rem;
+  font-weight: 700;
+  margin-bottom: 1rem;
+}
+
+.copy {
+  color: var(--text-color);
+  line-height: 1.6;
+  margin-bottom: 1rem;
+}
+
+.volunteer-meta {
+  color: var(--meta-col);
+  font-size: 0.9rem;
+}
+
+/* Enhanced Hackathon Section */
+.blog-slider {
+  background: var(--bg1-color);
+  border: 1px solid var(--shadow-col1);
+  box-shadow: 0 15px 40px var(--shadow-light);
+  border-radius: 25px;
+  padding: 2rem;
+  margin: 2rem auto;
+  max-width: 900px;
+}
+
+.blog-slider__title {
+  color: var(--head-col);
+  font-size: 2rem;
+  font-weight: 700;
+  margin-bottom: 1rem;
+}
+
+.blog-slider__code {
+  color: var(--primary-color);
+  font-weight: 600;
+  font-size: 1.1rem;
+  margin-bottom: 1rem;
+}
+
+.blog-slider__text {
+  color: var(--text-color);
+  line-height: 1.6;
+  margin-bottom: 1.5rem;
+}
+
+.hackathon-achievements {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.5rem;
+  margin-bottom: 1.5rem;
+}
+
+.achievement-badge {
+  background: var(--gradient-primary);
+  color: white;
+  padding: 0.25rem 0.75rem;
+  border-radius: 20px;
+  font-size: 0.8rem;
+  font-weight: 600;
+}
+
+.blog-slider__button {
+  background: var(--gradient-primary);
+  color: white;
+  padding: 0.75rem 1.5rem;
+  border-radius: 25px;
+  font-weight: 600;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  display: inline-block;
+}
+
+.blog-slider__button:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 10px 20px rgba(187, 134, 252, 0.3);
+}
+
+/* Improved Headings */
+.heading1 {
+  font-size: 2.5rem;
+  font-weight: 700;
+  color: var(--head-col);
+  text-align: center;
+  margin: 3rem 0;
+  position: relative;
+}
+
+.heading1::after {
+  content: "";
+  position: absolute;
+  bottom: -10px;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 100px;
+  height: 4px;
+  background: var(--gradient-primary);
+}
+
+/* Social Media Section */
+.social-media-section h5 {
+  color: var(--head-col);
+  font-weight: 600;
+}
+
+.social-link {
+  background: var(--gradient-primary);
+  color: white;
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  text-decoration: none;
+  transition: all 0.3s ease;
+  margin: 0 0.5rem;
+}
+
+.social-link:hover {
+  transform: translateY(-5px) scale(1.1);
+  color: white;
+  text-decoration: none;
+}
+
+/* Responsive improvements */
+@media only screen and (max-width: 768px) {
+  .main, .main1 {
+    padding-left: 1rem;
+    padding-right: 1rem;
+  }
+
+  .experience-cards {
+    grid-template-columns: 1fr;
+    gap: 1rem;
+  }
+
+  .card1 {
+    max-width: 100%;
+  }
+
+  .volunteerCard {
+    margin: 0.5rem;
+    padding: 1.5rem;
+  }
+
+  .blog-slider {
+    margin: 1rem;
+    padding: 1.5rem;
+  }
+
+  .heading1 {
+    font-size: 2rem;
+  }
+}
+
+@media only screen and (max-width: 480px) {
+  .card-body {
+    padding: 1rem;
+  }
+
+  .card-title {
+    font-size: 1.25rem;
+  }
+
+  .volunteerTitle {
+    font-size: 1.25rem;
+  }
+
+  .blog-slider__title {
+    font-size: 1.5rem;
+  }
+
+  .social-link {
+    width: 45px;
+    height: 45px;
+    font-size: 1.2rem;
+  }
+}
+/*
+----------------------------
+       SVG ANIMATIONS 
+----------------------------
+*/
+#tie {
+  animation: tie 2s infinite ease-in-out;
+  transform-origin: 50% 62%;
+}
+@keyframes tie {
+  0%,
+  100% {
+    transform: rotate(0);
+  }
+  50% {
+    transform: skew(-12deg) rotate(-6deg);
+  }
+}
+
+/* Experience Section Styling */
+.experience-cards {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.experience-cards .card {
+  background: var(--card-bg);
+  border: 1px solid var(--card-border);
+  border-radius: 15px;
+  margin-bottom: 2rem;
+  box-shadow: var(--card-shadow);
+  transition: all 0.3s ease;
+  position: relative;
+  overflow: hidden;
+}
+
+.experience-cards .card:hover {
+  transform: translateY(-5px);
+  box-shadow: var(--card-shadow-hover);
+}
+
+.experience-cards .card::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  height: 4px;
+  background: linear-gradient(90deg, var(--primary-color), var(--secondary-color));
+}
+
+/* Experience Header */
+.experience-header {
+  display: flex;
+  align-items: flex-start;
+  gap: 1rem;
+  margin-bottom: 1.5rem;
+}
+
+.company-logo {
+  flex-shrink: 0;
+}
+
+.company-img {
+  width: 60px;
+  height: 60px;
+  border-radius: 10px;
+  object-fit: cover;
+}
+
+.experience-info {
+  flex: 1;
+}
+
+.experience-title {
+  margin: 0 0 0.5rem 0;
+  color: var(--text-primary);
+  font-weight: 600;
+}
+
+.company-name {
+  margin: 0 0 0.5rem 0;
+  color: var(--primary-color);
+  font-weight: 500;
+}
+
+.experience-meta {
+  display: flex;
+  gap: 1rem;
+  font-size: 0.9rem;
+  color: var(--text-muted);
+}
+
+.experience-meta i {
+  margin-right: 0.25rem;
+}
+
+/* Certificate Section */
+.certificate-section {
+  flex-shrink: 0;
+}
+
+.certificate-btn {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+  padding: 0.5rem 1rem;
+  background: linear-gradient(135deg, #4285f4, #34a853);
+  color: white;
+  text-decoration: none;
+  border-radius: 8px;
+  font-size: 0.85rem;
+  font-weight: 500;
+  transition: all 0.3s ease;
+  box-shadow: 0 2px 8px rgba(66, 133, 244, 0.3);
+}
+
+.certificate-btn:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 4px 12px rgba(66, 133, 244, 0.4);
+  color: white;
+  text-decoration: none;
+}
+
+.google-logo {
+  width: 16px;
+  height: 16px;
+  object-fit: contain;
+}
+
+/* Technologies and Achievements */
+.technologies,
+.achievements {
+  margin-top: 1.5rem;
+}
+
+.technologies h6,
+.achievements h6 {
+  margin-bottom: 0.75rem;
+  color: var(--text-primary);
+  font-weight: 600;
+}
+
+.tech-tags {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.5rem;
+}
+
+.tech-tag {
+  background: rgba(187, 134, 252, 0.1);
+  color: #bb86fc;
+  padding: 0.25rem 0.75rem;
+  border-radius: 20px;
+  font-size: 0.75rem;
+  font-weight: 500;
+  border: 1px solid rgba(187, 134, 252, 0.3);
+}
+
+.achievement-list {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.achievement-list li {
+  position: relative;
+  padding-left: 1.5rem;
+  margin-bottom: 0.5rem;
+  color: var(--text-secondary);
+}
+
+.achievement-list li::before {
+  content: '✓';
+  position: absolute;
+  left: 0;
+  color: var(--primary-color);
+  font-weight: bold;
+}
+
+/* Volunteership Styling */
+.volunteer-header {
+  display: flex;
+  align-items: flex-start;
+  gap: 1rem;
+  margin-bottom: 1rem;
+}
+
+.volunteer-logo {
+  flex-shrink: 0;
+}
+
+.volunteer-img {
+  width: 50px;
+  height: 50px;
+  border-radius: 8px;
+  object-fit: cover;
+}
+
+.volunteer-info {
+  flex: 1;
+}
+
+.volunteer-title {
+  margin: 0 0 0.5rem 0;
+  color: var(--text-primary);
+  font-weight: 600;
+}
+
+.organization-name {
+  margin: 0 0 0.5rem 0;
+  color: var(--primary-color);
+  font-weight: 500;
+}
+
+.volunteer-duration {
+  font-size: 0.9rem;
+  color: var(--text-muted);
+}
+
+/* Hackathon Styling */
+.hackathon-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  margin-bottom: 1rem;
+}
+
+.hackathon-info {
+  flex: 1;
+}
+
+.hackathon-meta {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+  margin: 0.5rem 0;
+}
+
+.position-badge {
+  background: linear-gradient(135deg, #bb86fc, #4c00bb);
+  color: white;
+  padding: 0.25rem 0.75rem;
+  border-radius: 20px;
+  font-size: 0.75rem;
+  font-weight: 600;
+}
+
+.hackathon-duration {
+  font-size: 0.9rem;
+  color: var(--text-muted);
+}
+
+.hackathon-technologies {
+  margin-top: 1rem;
+}

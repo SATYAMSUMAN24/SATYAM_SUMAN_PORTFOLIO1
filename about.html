@@ -1,0 +1,518 @@
+<!DOCTYPE html>
+<html lang="en" light-mode="dark">
+
+<head>
+    <title>Satyam Suman | About Me - Full Stack Developer & Data Analyst</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="keywords" content="Satyam Suman, About Me, Full Stack Developer, Data Analyst, Computer Science, Biography" />
+    <meta name="description" content="Learn more about Satyam Suman - a passionate Computer Science graduate specializing in full-stack development and data analysis. Discover my journey, skills, and aspirations." />
+
+    <!-- Robot.txt -->
+    <meta name="robots" content="index,follow" />
+    <meta name="Googlebot" content="index,follow" />
+    <meta name="AdsBot-Google" content="index,follow" />
+
+    <meta property="og:site_name" content="https://satyamsumanportfolio.vercel.app/about.html">
+    <meta property="og:title" content="Satyam Suman | About Me">
+    <meta property="og:description" content="Learn more about Satyam Suman - a passionate Computer Science graduate specializing in full-stack development and data analysis.">
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="https://satyamsumanportfolio.vercel.app/about.html">
+    <meta name="twitter:card" content="summary">
+    <meta name="twitter:site" content="https://satyamsumanportfolio.vercel.app/about.html">
+
+    <meta name="application-name" content="Satyam Suman | About" />
+    <meta name="apple-mobile-web-app-title" content="Satyam Suman | About" />
+
+    <!--For Dark/Light mode Toggle-->
+    <script src="https://code.iconify.design/1/1.0.4/iconify.min.js"></script>
+
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css" />
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.0.0/animate.min.css" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.1/css/all.min.css" integrity="sha512-+4zCK9k+qNFUR5X+cKL9EIR+ZOhtIloNl9GIKS57V1MyNsYpYcUrUeQc9vNfzsWfV28IaLL3i96P9sdNyeRssA==" crossorigin="anonymous" />
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/jpswalsh/academicons@1/css/academicons.min.css">
+    <script src='https://kit.fontawesome.com/a076d05399.js'></script>
+
+    <link rel="stylesheet" href="assets/css/preloader.css">
+    <link rel="stylesheet" href="assets/css/style.css">
+    <link rel="stylesheet" href="assets/css/cursor.css">
+    <link rel="stylesheet" href="assets/css/floating-resume.css">
+    <link rel="stylesheet" href="assets/css/floating-nav.css">
+    <link id='favicon' rel="icon" href="assets/images/favicon.png" type="image/png">
+
+    <script defer src="./assets/js/dynamicTitle.js"></script>
+
+    <!-- Global site tag (gtag.js) - Google Analytics -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-M11CMZ12Q"></script>
+    <script>
+        window.dataLayer = window.dataLayer || [];
+        function gtag(){dataLayer.push(arguments);}
+        gtag('js', new Date());
+        gtag('config', 'G-M11CMZ12Q');
+    </script>
+
+    <style>
+        .about-hero {
+            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+            color: white;
+            padding: 5rem 0;
+            margin-top: 0;
+        }
+
+        .profile-image {
+            width: 300px;
+            height: 300px;
+            border-radius: 50%;
+            object-fit: cover;
+            border: 5px solid #bb86fc;
+            box-shadow: 0 10px 30px rgba(0,0,0,0.3);
+            transition: transform 0.3s ease;
+        }
+
+        .profile-image:hover {
+            transform: scale(1.05);
+        }
+
+        .about-section {
+            padding: 4rem 0;
+        }
+
+        .section-title {
+            color: #bb86fc;
+            font-weight: 600;
+            margin-bottom: 2rem;
+            position: relative;
+        }
+
+        .section-title::after {
+            content: '';
+            position: absolute;
+            bottom: -10px;
+            left: 0;
+            width: 50px;
+            height: 3px;
+            background: #bb86fc;
+        }
+
+        .skill-bar {
+            margin-bottom: 1.5rem;
+        }
+
+        .skill-name {
+            font-weight: 500;
+            margin-bottom: 0.5rem;
+        }
+
+        .progress {
+            height: 10px;
+            border-radius: 5px;
+            background-color: #e9ecef;
+        }
+
+        .progress-bar {
+            background: linear-gradient(45deg, #bb86fc, #6c63ff);
+            border-radius: 5px;
+            transition: width 0.6s ease;
+        }
+
+        .timeline-item {
+            border-left: 3px solid #bb86fc;
+            padding-left: 2rem;
+            margin-bottom: 2rem;
+            position: relative;
+        }
+
+        .timeline-item::before {
+            content: '';
+            position: absolute;
+            left: -8px;
+            top: 0;
+            width: 13px;
+            height: 13px;
+            border-radius: 50%;
+            background: #bb86fc;
+        }
+
+        .fun-fact {
+            background: rgba(187, 134, 252, 0.1);
+            padding: 1.5rem;
+            border-radius: 10px;
+            margin-bottom: 1rem;
+            text-align: center;
+        }
+
+        .fun-fact i {
+            font-size: 2rem;
+            color: #bb86fc;
+            margin-bottom: 1rem;
+        }
+
+        .quote {
+            font-style: italic;
+            text-align: center;
+            font-size: 1.2rem;
+            color: #666;
+            margin: 3rem 0;
+            padding: 2rem;
+            background: rgba(187, 134, 252, 0.05);
+            border-left: 4px solid #bb86fc;
+        }
+    </style>
+</head>
+
+<body class="no-scroll-preload">
+    <!-- loader -->
+    <div class="loader-container">
+        <div class="atom">
+            <div class="electron"></div>
+            <div class="electron-alpha"></div>
+            <div class="electron-omega"></div>
+        </div>
+    </div>
+
+    <!--Dynamic Nav Bar-->
+
+    <!-- Hero Section -->
+    <section class="about-hero">
+        <div class="container">
+            <div class="row align-items-center">
+                <div class="col-lg-6 text-center mb-4 mb-lg-0">
+                    <img src="assets/images/dp_male.svg" 
+                         alt="Satyam Suman" class="profile-image animate__animated animate__fadeInLeft">
+                </div>
+                <div class="col-lg-6">
+                    <div class="animate__animated animate__fadeInRight">
+                        <h1 class="display-4 mb-3">About <span style="color: #bb86fc;">Me</span></h1>
+                        <p class="lead mb-4">
+                            Hi there! I'm Satyam Suman, a passionate Computer Science graduate with a love for creating 
+                            innovative solutions through code and data analysis.
+                        </p>
+                        <div class="d-flex flex-wrap gap-3">
+                            <span class="badge badge-light p-2"><i class="fas fa-map-marker-alt"></i> Bihar, India</span>
+                            <span class="badge badge-light p-2"><i class="fas fa-birthday-cake"></i> 21 Years Old</span>
+                            <span class="badge badge-light p-2"><i class="fas fa-graduation-cap"></i> B.Tech CSE</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Main About Content -->
+    <div class="container">
+
+        <!-- Personal Story Section -->
+        <section class="about-section">
+            <div class="row">
+                <div class="col-lg-8 mx-auto">
+                    <h2 class="section-title">My Story</h2>
+                    <p class="lead">
+                        My journey in technology began during my college years at Gandhi Engineering College, where I discovered 
+                        my passion for solving complex problems through programming and data analysis.
+                    </p>
+                    <p>
+                        Born and raised in Bihar, I've always been fascinated by how technology can transform lives and businesses. 
+                        This curiosity led me to pursue Computer Science Engineering, where I developed a strong foundation in 
+                        programming languages like Java, Python, and JavaScript.
+                    </p>
+                    <p>
+                        What started as academic interest soon evolved into practical expertise through various projects and 
+                        certifications. I've worked on everything from full-stack web applications to data analysis projects, 
+                        always with the goal of creating meaningful impact through technology.
+                    </p>
+                </div>
+            </div>
+        </section>
+
+        <!-- Skills & Expertise -->
+        <section class="about-section bg-light">
+            <div class="container">
+                <div class="row">
+                    <div class="col-lg-12">
+                        <h2 class="section-title text-center">Skills & Expertise</h2>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-lg-6">
+                        <h4>Programming Languages</h4>
+                        <div class="skill-bar">
+                            <div class="skill-name">Java</div>
+                            <div class="progress">
+                                <div class="progress-bar" style="width: 85%"></div>
+                            </div>
+                        </div>
+                        <div class="skill-bar">
+                            <div class="skill-name">Python</div>
+                            <div class="progress">
+                                <div class="progress-bar" style="width: 80%"></div>
+                            </div>
+                        </div>
+                        <div class="skill-bar">
+                            <div class="skill-name">JavaScript</div>
+                            <div class="progress">
+                                <div class="progress-bar" style="width: 75%"></div>
+                            </div>
+                        </div>
+                        <div class="skill-bar">
+                            <div class="skill-name">HTML/CSS</div>
+                            <div class="progress">
+                                <div class="progress-bar" style="width: 90%"></div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-6">
+                        <h4>Frameworks & Tools</h4>
+                        <div class="skill-bar">
+                            <div class="skill-name">React.js</div>
+                            <div class="progress">
+                                <div class="progress-bar" style="width: 80%"></div>
+                            </div>
+                        </div>
+                        <div class="skill-bar">
+                            <div class="skill-name">Spring Boot</div>
+                            <div class="progress">
+                                <div class="progress-bar" style="width: 70%"></div>
+                            </div>
+                        </div>
+                        <div class="skill-bar">
+                            <div class="skill-name">Power BI</div>
+                            <div class="progress">
+                                <div class="progress-bar" style="width: 75%"></div>
+                            </div>
+                        </div>
+                        <div class="skill-bar">
+                            <div class="skill-name">Git & GitHub</div>
+                            <div class="progress">
+                                <div class="progress-bar" style="width: 85%"></div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Education & Career Timeline -->
+        <section class="about-section">
+            <div class="row">
+                <div class="col-lg-8 mx-auto">
+                    <h2 class="section-title">My Journey</h2>
+                    <div class="timeline-item">
+                        <h4>B.Tech Computer Science Engineering (2021-2025)</h4>
+                        <h6 class="text-muted">Gandhi Engineering College</h6>
+                        <p>Currently pursuing my degree with a CGPA of 7.37. Focusing on full-stack development, 
+                           data structures, algorithms, and modern web technologies.</p>
+                    </div>
+                    <div class="timeline-item">
+                        <h4>Java Full Stack Certification (2024-2025)</h4>
+                        <h6 class="text-muted">Apna College</h6>
+                        <p>Comprehensive training in Java programming, Spring Boot framework, React.js frontend 
+                           development, and database management.</p>
+                    </div>
+                    <div class="timeline-item">
+                        <h4>Data Science with Python (2024)</h4>
+                        <h6 class="text-muted">Code with Harry</h6>
+                        <p>Advanced course covering Python programming, Pandas, NumPy, data visualization, 
+                           and machine learning fundamentals.</p>
+                    </div>
+                    <div class="timeline-item">
+                        <h4>Data Analysis with Excel (2024)</h4>
+                        <h6 class="text-muted">Coursera</h6>
+                        <p>Professional certification in advanced Excel techniques, data analysis, and 
+                           business intelligence tools.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Fun Facts -->
+        <section class="about-section bg-light">
+            <div class="container">
+                <div class="row">
+                    <div class="col-lg-12">
+                        <h2 class="section-title text-center">Fun Facts About Me</h2>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-lg-3 col-md-6">
+                        <div class="fun-fact">
+                            <i class="fas fa-code"></i>
+                            <h4>10+</h4>
+                            <p>Projects Completed</p>
+                        </div>
+                    </div>
+                    <div class="col-lg-3 col-md-6">
+                        <div class="fun-fact">
+                            <i class="fas fa-certificate"></i>
+                            <h4>4+</h4>
+                            <p>Certifications Earned</p>
+                        </div>
+                    </div>
+                    <div class="col-lg-3 col-md-6">
+                        <div class="fun-fact">
+                            <i class="fas fa-coffee"></i>
+                            <h4>500+</h4>
+                            <p>Cups of Coffee</p>
+                        </div>
+                    </div>
+                    <div class="col-lg-3 col-md-6">
+                        <div class="fun-fact">
+                            <i class="fas fa-clock"></i>
+                            <h4>1000+</h4>
+                            <p>Hours of Coding</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Personal Interests -->
+        <section class="about-section">
+            <div class="row">
+                <div class="col-lg-8 mx-auto">
+                    <h2 class="section-title">Beyond Coding</h2>
+                    <p>
+                        When I'm not coding, you can find me exploring the latest tech trends, participating in hackathons, 
+                        or contributing to open-source projects. I believe in continuous learning and always stay updated 
+                        with emerging technologies.
+                    </p>
+                    <p>
+                        I'm passionate about using technology to solve real-world problems and make a positive impact on society. 
+                        Whether it's analyzing data to uncover insights or building applications that improve user experiences, 
+                        I approach every project with enthusiasm and dedication.
+                    </p>
+
+                    <div class="quote">
+                        "The best way to predict the future is to create it." - Peter Drucker
+                        <br><br>
+                        This quote resonates with me because I believe in taking action to build the solutions we want to see in the world.
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Goals & Aspirations -->
+        <section class="about-section bg-light">
+            <div class="container">
+                <div class="row">
+                    <div class="col-lg-8 mx-auto">
+                        <h2 class="section-title">Goals & Aspirations</h2>
+                        <div class="row">
+                            <div class="col-md-6">
+                                <h4><i class="fas fa-rocket text-primary"></i> Short-term Goals</h4>
+                                <ul>
+                                    <li>Complete my B.Tech degree with excellence</li>
+                                    <li>Gain hands-on experience through internships</li>
+                                    <li>Build more full-stack applications</li>
+                                    <li>Contribute to open-source projects</li>
+                                </ul>
+                            </div>
+                            <div class="col-md-6">
+                                <h4><i class="fas fa-star text-warning"></i> Long-term Vision</h4>
+                                <ul>
+                                    <li>Become a senior full-stack developer</li>
+                                    <li>Lead innovative tech projects</li>
+                                    <li>Mentor aspiring developers</li>
+                                    <li>Start my own tech venture</li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+    </div>
+
+    <!--Cursor-->
+    <div class="cursor-dot-outline"></div>
+    <div class="cursor-dot"></div>
+
+    <!-- Social Media Links -->
+    <div class="container mt-5">
+        <div class="row">
+            <div class="col-md-8 mx-auto text-center">
+                <h5 class="mb-4">Connect with me</h5>
+                <div class="social-icons">
+                    <a href="https://www.linkedin.com/in/satyamsuman2003/" target="_blank" class="social-link" style="margin: 0 10px; font-size: 1.5rem; color: #bb86fc;">
+                        <i class="fab fa-linkedin"></i>
+                    </a>
+                    <a href="https://www.instagram.com/satyamsuman6349/" target="_blank" class="social-link" style="margin: 0 10px; font-size: 1.5rem; color: #bb86fc;">
+                        <i class="fab fa-instagram"></i>
+                    </a>
+                    <a href="https://github.com/SATYAMSUMAN24" target="_blank" class="social-link" style="margin: 0 10px; font-size: 1.5rem; color: #bb86fc;">
+                        <i class="fab fa-github"></i>
+                    </a>
+                    <a href="https://x.com/satyamsuman24" target="_blank" class="social-link" style="margin: 0 10px; font-size: 1.5rem; color: #bb86fc;">
+                        <i class="fab fa-twitter"></i>
+                    </a>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- AI Assistant CSS -->
+    <link rel="stylesheet" href="assets/css/ai-assistant.css">
+
+    <!-- EmailJS -->
+    <script src="https://cdn.emailjs.com/dist/email.min.js"></script>
+    <script>
+        emailjs.init("q1gxJ3G4BqM9leKk8");
+
+        document.getElementById('contactForm').addEventListener('submit', function(e) {
+            e.preventDefault();
+
+            const formData = new FormData(this);
+            const templateParams = {
+                name: formData.get('name'),
+                email: formData.get('email'),
+                message: formData.get('message')
+            };
+
+            emailjs.send('service_n27wqfr', 'template_42ndqz9', templateParams)
+                .then(function() {
+                    alert('Message sent successfully!');
+                    document.getElementById('contactForm').reset();
+                }, function(error) {
+                    alert('Failed to send message. Please try again.');
+                });
+        });
+    </script>
+
+    <script src="https://code.jquery.com/jquery-3.5.1.min.js" integrity="sha256-9/aliU8dGd2tb6OSsuzixeV4y/faTqgFtohetphbbj0=" crossorigin="anonymous"></script>
+    <script src="assets/js/app.js"></script>
+    <script src="assets/js/cursor.js"></script>
+    <script src="assets/js/floating-resume.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+    <!-- Floating Navigation -->
+    <div class="floating-nav">
+        <a href="reference.html" class="floating-nav-btn" data-tooltip="References">
+            <i class="fas fa-users"></i>
+        </a>
+        <a href="research.html" class="floating-nav-btn" data-tooltip="Research">
+            <i class="fas fa-microscope"></i>
+        </a>
+        <a href="sem_temp.html" class="floating-nav-btn" data-tooltip="Semester">
+            <i class="fas fa-graduation-cap"></i>
+        </a>
+        <a href="techstack.html" class="floating-nav-btn" data-tooltip="Tech Stack">
+            <i class="fas fa-code"></i>
+        </a>
+        <a href="travel_temp.html" class="floating-nav-btn" data-tooltip="Travel">
+            <i class="fas fa-plane"></i>
+        </a>
+    </div>
+
+    <script src="assets/js/ai-assistant.js"></script>
+    <script>
+        document.addEventListener('DOMContentLoaded', function() {
+            new AIAssistant();
+        });
+    </script>
+
+    <!-- AI Assistant Container -->
+    <div id="ai-assistant-container"></div>
+</body>
+
+</html>

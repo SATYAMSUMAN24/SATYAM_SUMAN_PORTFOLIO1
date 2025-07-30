@@ -1,0 +1,153 @@
+
+/* Performance and Mobile Optimizations */
+
+/* Reduce animations on mobile for better performance */
+@media (max-width: 768px) {
+  *, *::before, *::after {
+    animation-duration: 0.5s !important;
+    animation-iteration-count: 1 !important;
+    transition-duration: 0.3s !important;
+  }
+
+  /* Reduce motion for users who prefer it */
+  @media (prefers-reduced-motion: reduce) {
+    *, *::before, *::after {
+      animation: none !important;
+      transition: none !important;
+    }
+  }
+}
+
+/* Optimize images for better loading */
+img {
+  max-width: 100%;
+  height: auto;
+  loading: lazy;
+}
+
+/* Critical CSS for above-the-fold content */
+.hero-section {
+  min-height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+/* Improve text readability */
+.hero-title, .section-title {
+  line-height: 1.2;
+  word-wrap: break-word;
+}
+
+/* Better button states */
+button, .btn {
+  cursor: pointer;
+  transition: all 0.3s ease;
+  min-height: 44px; /* Touch target size */
+  min-width: 44px;
+}
+
+button:hover:not(:disabled), .btn:hover:not(:disabled) {
+  transform: translateY(-2px);
+  box-shadow: 0 4px 12px rgba(0,0,0,0.15);
+}
+
+button:disabled, .btn:disabled {
+  opacity: 0.6;
+  cursor: not-allowed;
+}
+
+/* Form improvements */
+.form-control {
+  font-size: 16px; /* Prevents zoom on iOS */
+  padding: 12px 16px;
+  border-radius: 8px;
+  border: 2px solid #e2e8f0;
+  transition: border-color 0.3s ease;
+}
+
+.form-control:focus {
+  border-color: #bb86fc;
+  box-shadow: 0 0 0 3px rgba(187, 134, 252, 0.1);
+}
+
+/* Error states */
+.form-control.error {
+  border-color: #e53e3e;
+  box-shadow: 0 0 0 3px rgba(229, 62, 62, 0.1);
+}
+
+/* Success states */
+.form-control.success {
+  border-color: #38a169;
+  box-shadow: 0 0 0 3px rgba(56, 161, 105, 0.1);
+}
+
+/* Loading states */
+.loading {
+  position: relative;
+  pointer-events: none;
+}
+
+.loading::after {
+  content: '';
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  width: 20px;
+  height: 20px;
+  margin-top: -10px;
+  margin-left: -10px;
+  border: 2px solid #ffffff;
+  border-top: 2px solid transparent;
+  border-radius: 50%;
+  animation: spin 1s linear infinite;
+}
+
+@keyframes spin {
+  0% { transform: rotate(0deg); }
+  100% { transform: rotate(360deg); }
+}
+
+/* Toast notifications */
+.toast {
+  position: fixed;
+  top: 20px;
+  right: 20px;
+  background: #ffffff;
+  border: 1px solid #e2e8f0;
+  border-radius: 8px;
+  padding: 16px;
+  box-shadow: 0 10px 25px rgba(0,0,0,0.1);
+  z-index: 9999;
+  transform: translateX(100%);
+  transition: transform 0.3s ease;
+}
+
+.toast.show {
+  transform: translateX(0);
+}
+
+.toast.success {
+  border-left: 4px solid #38a169;
+}
+
+.toast.error {
+  border-left: 4px solid #e53e3e;
+}
+
+/* Better mobile navigation */
+@media (max-width: 991px) {
+  .navbar-nav {
+    padding: 1rem 0;
+  }
+  
+  .nav-item {
+    margin: 0.5rem 0;
+  }
+  
+  .nav-link {
+    padding: 0.75rem 1rem !important;
+    font-size: 1.1rem;
+  }
+}

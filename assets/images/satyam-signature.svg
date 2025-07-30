@@ -1,0 +1,37 @@
+
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 400 100" width="400" height="100">
+  <defs>
+    <style>
+      .signature-text {
+        font-family: 'Brush Script MT', 'Dancing Script', cursive;
+        font-size: 32px;
+        fill: #bb86fc;
+        stroke: #bb86fc;
+        stroke-width: 1;
+        font-weight: bold;
+      }
+      .underline {
+        stroke: #bb86fc;
+        stroke-width: 3;
+        fill: none;
+      }
+      .flourish {
+        fill: #bb86fc;
+      }
+    </style>
+  </defs>
+  
+  <!-- Signature Text -->
+  <text x="30" y="45" class="signature-text">Satyam Suman</text>
+  
+  <!-- Decorative underline -->
+  <path d="M 30 55 Q 200 65 370 55" class="underline"/>
+  
+  <!-- Small decorative flourishes -->
+  <circle cx="25" cy="40" r="3" class="flourish"/>
+  <circle cx="375" cy="55" r="3" class="flourish"/>
+  
+  <!-- Additional decorative elements -->
+  <path d="M 25 40 Q 35 35 45 40" class="underline" stroke-width="2"/>
+  <path d="M 365 55 Q 375 50 385 55" class="underline" stroke-width="2"/>
+</svg>
