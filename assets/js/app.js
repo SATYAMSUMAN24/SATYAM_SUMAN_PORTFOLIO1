@@ -4,30 +4,6 @@ let script = document.createElement("script");
 script.type = 'text/javascript';
 script.src="https://unpkg.com/sweetalert/dist/sweetalert.min.js";
 document.body.appendChild(script);
-// Email js
-<script src="https://cdn.emailjs.com/dist/email.min.js"></script>
-    <script>
-        emailjs.init("q1gxJ3G4BqM9leKk8");
-
-        document.getElementById('contactForm').addEventListener('submit', function(e) {
-            e.preventDefault();
-            
-            const formData = new FormData(this);
-            const templateParams = {
-                name: formData.get('name'),
-                email: formData.get('email'),
-                message: formData.get('message')
-            };
-            
-            emailjs.send('service_n27wqfr', 'template_42ndqz9', templateParams)
-                .then(function() {
-                    alert('Message sent successfully!');
-                    document.getElementById('contactForm').reset();
-                }, function(error) {
-                    alert('Failed to send message. Please try again.');
-                });
-        });
-    </script>
 
 // Header
 
