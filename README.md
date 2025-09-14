@@ -7,14 +7,14 @@
 
 [![Open Source](https://badges.frapsoft.com/os/v1/open-source.svg?v=103)](https://github.com/SATYAMSUMAN24)
 [![Built by developers](https://img.shields.io/badge/Built%20by-developers%20%3C%2F%3E-0059b3)](https://github.com/SATYAMSUMAN24)
-[![Responsive Design](https://img.shields.io/badge/Design-Responsive-brightgreen)](https://satyamsumanportfolio.vercel.app)
-[![AI Assistant](https://img.shields.io/badge/Feature-AI%20Assistant-blue)](https://satyamsumanportfolio.vercel.app)
+[![Responsive Design](https://img.shields.io/badge/Design-Responsive-brightgreen)](https://satyam-suman-portfolio-1.vercel.app/)
+[![AI Assistant](https://img.shields.io/badge/Feature-AI%20Assistant-blue)](https://satyam-suman-portfolio-1.vercel.app/)
 [![License](https://img.shields.io/badge/license-MIT-blue.svg?v=103)](./LICENSE)
 
 </div>
 
 ## 🚀 Live Portfolio
-**[View Portfolio →](https://satyamsumanportfolio.vercel.app)**
+**[View Portfolio →](https://satyam-suman-portfolio-1.vercel.app/)**
 
 A modern, fully responsive developer portfolio showcasing my journey as a Computer Science graduate specializing in full-stack web development and data analysis. Built with clean design principles and enhanced user experience features.
 
