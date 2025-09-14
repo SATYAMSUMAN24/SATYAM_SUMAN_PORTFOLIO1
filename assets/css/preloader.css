@@ -38,7 +38,7 @@
   align-items: center;
   width: var(--atom-size);
   height: var(--atom-size);
-  animation: 8s atom infinite cubic-bezier(1, .25, 0, .75);
+  animation: 3s atom infinite cubic-bezier(1, .25, 0, .75);
 }
 @keyframes atom{
   0% {    
@@ -84,7 +84,7 @@
     background: var(--electron-color-hex); /* var(--atom-color-hex); */
     border-radius: 100%;
     box-shadow: 0 0 3px 0 var(--atom-color-hex);
-    animation: 3s nucleus infinite cubic-bezier(.65, 0, .35, 1);
+    animation: 2s nucleus infinite cubic-bezier(.65, 0, .35, 1);
 }
 @keyframes nucleus {
     0% { transform: scale(1); }
