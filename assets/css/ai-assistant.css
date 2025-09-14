@@ -1,7 +1,7 @@
 
 /* AI Assistant Styles */
 .ai-assistant {
-  position: fixed;
+  position: relative;
   bottom: 20px;
   right: 20px;
   z-index: 10000;
