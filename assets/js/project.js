@@ -105,6 +105,26 @@ const projects = [
     Githublink: "https://github.com/SATYAMSUMAN24/Lok_sahaba_2024_election_python",
     skills: ["Python", "Web3.js", "Power Bi", "Seaborn"],
     hostingPlatform: "Vercel"
+  },
+{
+    title: "Digital Loan Processing Centre",
+    cardImage: "assets/images/project-page/loan.png",
+    description: "Get Your In Principal Approval Letter in Three Minutes with easy to follow do it yourself steps.Fastest and easy way to get loan. Any where, in few minutes and easy step, fast documentation process . Bank loan on your finger.",
+    tagimg: "https://cdn.iconscout.com/icon/free/png-512/javascript-1-225993.png",
+    Previewlink: "https://blue-theme-loan-details.vercel.app/",
+    Githublink: "https://github.com/SATYAMSUMAN24/Blue_theme_loan_details",
+    skills: ["JavaScript", "HTML", "Local Storage", "CSS Grid"],
+    hostingPlatform: "Vercel"
+  },
+  {
+    title: "Satyam Suman pvt limited",
+    cardImage: "https://images.unsplash.com/photo-1559526324-4b87b5e36e44?w=400&h=300&fit=crop",
+    description: "Website provide all types of digit services and support",
+    tagimg: "https://cdn.iconscout.com/icon/free/png-512/javascript-1-225993.png",
+    Previewlink: "https://suman-solution-hub120.vercel.app/",
+    Githublink: "https://github.com/SATYAMSUMAN24/SumanSolution-Hub120",
+    skills: ["JavaScript", "HTML", "Local Storage", "CSS Grid"],
+    hostingPlatform: "Vercel"
   }
 ];
 
